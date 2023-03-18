@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'carts',
     'accounts',
     'category',
     'store',
@@ -66,7 +67,9 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 ## new 
-                'category.contex_procesors.menu_links'
+                'category.contex_procesors.menu_links',
+                'carts.context_processore.counter',
+                
             ],
         },
     },
